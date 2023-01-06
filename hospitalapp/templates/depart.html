@@ -1,0 +1,14 @@
+{% extends 'hospital.html' %}
+{% block container %}
+<h1 class="text-center" >Our Department</h1>
+<hr>
+{% for i in dep %}
+
+<div class="mx-auto w-50 bg-dark text-center text-white p-3 my-3 border border-danger border-rounded">
+
+    <h3>{{i.dep_name}}</h3>
+    <h6>{{i.dep_discription}}</h6>
+</div>
+
+{% endfor %}
+{% endblock %}

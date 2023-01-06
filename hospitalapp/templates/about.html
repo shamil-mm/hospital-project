@@ -1,0 +1,12 @@
+{% extends 'hospital.html' %}
+{% block container %}
+<form action="about" method="post">
+
+
+{% csrf_token %}
+{{ form.as_p }}
+    <input type="submit" class="btn btn-outline-warning" value="submit">
+
+
+</form>
+{% endblock %}

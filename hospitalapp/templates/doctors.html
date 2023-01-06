@@ -1,0 +1,22 @@
+{% extends 'hospital.html' %}
+{% block container %}
+
+
+{% for i in doc %}
+<div class="card" style="width: 18rem; padding:10px 10px; margin-top:25px; margin-left:25px; ">
+  <img src="{{ i.dr_image.url }}" class="card-img-top" alt="dr_image">
+  <div class="card-body">
+    <h3 class="card-title"> {{ i.dr_name }}  {{ i.dr_spec }}</h3>
+    <p class="card-text"> {{ i.dep_description }}</p>
+
+
+
+  </div>
+</div>
+
+<p>{{ dr_name }}</p>
+
+
+{% endfor%}
+
+{% endblock %}

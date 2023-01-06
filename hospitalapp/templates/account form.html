@@ -1,0 +1,86 @@
+{% extends 'hospital.html'%}
+{% load static %}
+{% block javascript %}
+<script type="text/javascript" src="{% static 'js/java.js' %}" >
+
+</script>
+{% endblock %}
+
+{% block container %}
+
+<div class="container">
+<form style="padding:100px 50px" class="mx-auto ">
+    <div class="form-outline mb-6 ">
+            <label class="form-label" for="form1Example1">First Name</label>
+        <div class="row">
+            <div class="col-md-6" >
+                <input type="text" id="form1Example1" class="form-control"/>
+
+            </div>
+                <label class="col-md-6 " id="label_1" ></label>
+        </div>
+
+    </div>
+
+
+
+     <div class="form-outline mb-4">
+        <label class="form-label" for="form2Example2">Last Name</label>
+         <div class="row">
+             <div class="col-md-6">
+                <input type="text" id="form2Example2" class="form-control" />
+             </div>
+             <label class="col-md-6" id="label_2"></label>
+         </div>
+     </div>
+
+
+
+  <div class="form-outline mb-4">
+        <label class="form-label" for="form3Example3">Email address</label>
+      <div class="row">
+          <div class="col-md-6">
+                <input type="email" id="form3Example3" class="form-control " />
+          </div>
+                <label class="col-md-6" id="label_3"></label>
+      </div>
+
+  </div>
+
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form4Example4">Password</label>
+      <div class="row">
+          <div class="col-md-6">
+                <input type="password" id="form4Example4" class="form-control" />
+          </div>
+          <label class="col-md-6" id="label_4"></label>
+      </div>
+  </div>
+
+
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form5Example5">Re-Password</label>
+      <div class="row">
+          <div class="col-md-6">
+    <input type="password" id="form5Example5" class="form-control" />
+          </div>
+          <label class="col-md-6" id="label_5"></label>
+      </div>
+  </div>
+
+    <label id="error_msg" class="alert alert-danger" role="alert" style="display:none"> </label>
+
+
+      <div class="form-check">
+      <button type="button" class="btn btn-primary btn-block mb-4" onclick="show()">Create Account</button>
+    </div>
+    </form>
+</div>>
+
+
+
+
+
+
+
+{% endblock %}
